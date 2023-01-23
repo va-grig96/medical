@@ -1,0 +1,55 @@
+.header
+
+	&__wrapper
+		padding: 1.5rem 0
+		display: flex
+		justify-content: space-between
+		align-items: center
+
+	&__submenu
+		background-color: $color-blue
+
+	&__social-links
+		& a:not(:last-child)
+			margin-right: 2.1rem
+
+		img
+			width: 1.6rem
+			height: 1.6rem
+	&__email:link, &__email:visited
+		display: inline-block
+		font-size: 1.2rem
+		font-weight: 400
+		color: $color-white
+
+	&__logo
+		margin-right: 2.1rem
+
+	&__phone
+		display: grid
+		grid-template-columns: 2.3rem 1fr
+		grid-template-rows: repeat(2, min-content)
+		grid-column-gap: 1.2rem
+
+.nav
+	margin-right: 2.1rem
+
+	&__link:link, &__link:visited
+		font-size: 1.4rem
+		font-weight: 400
+		color: $color-black
+	&__link.active, &__link:hover
+		font-weight: 700
+
+	&__link:not(:last-child)
+		margin-right: 2.1rem
+
+.phone
+
+	&__img
+		grid-row: 1 / -1
+
+	&__subtitle
+		font-size: 1.4rem
+		font-weight: 400
+		color: #7D7D7D
